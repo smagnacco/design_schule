@@ -1,0 +1,27 @@
+Ejercicio de diseño
+1. Se requiere poder modelar una simulador de linea de comando que
+nos permita ejecutar las siguientes operaciones
+
+a. "exit" -> termina el programa
+b. "ls" -> nos permite listar el contenido de un directorio
+opciones: -r recursivo
+
+c. "cd" -> nos permite cambiar de directorio, tanto relativo, absoluto, tener en cuenta
+que .. es el directorio anterior. Ejemplo si estamos en /foo/bar, cd .. && pwd debería devolver /foo
+
+e. "mkdir" -> nos permite crear un directorio
+
+f. "rmdir" -> nos permite borrar un directorio
+
+g. "pwd", nos indica en que lugar del path estamos ubicados
+
+i. "touch", crea un archivo cuyo limite son 255 caracteres incluido el . y extensión
+
+j. "|", permitir que la salida de un comando sea la entrada de otro comando (bonus)
+
+Nota: ya sea absoluto (comienza con /) o relativo desde
+donde estemos parados aplica a las operaciones cd, mkdir, rmdir, ls, touch
+
+Nota 2: Si no se reconoce el comando o estan mal las opcinoes indicar mensaje de error correspondiente
+
+Nota 3: Simulación significa que no vamos a interactuar con el sistema operativo. 
