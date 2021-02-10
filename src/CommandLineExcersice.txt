@@ -22,6 +22,7 @@ j. "|", permitir que la salida de un comando sea la entrada de otro comando (bon
 Nota: ya sea absoluto (comienza con /) o relativo desde
 donde estemos parados aplica a las operaciones cd, mkdir, rmdir, ls, touch
 
-Nota 2: Si no se reconoce el comando o estan mal las opcinoes indicar mensaje de error correspondiente
+Nota 2: Si no se reconoce el comando o están mal las opciones indicar mensaje de error correspondiente
 
 Nota 3: Simulación significa que no vamos a interactuar con el sistema operativo.
+
