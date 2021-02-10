@@ -8,7 +8,7 @@ package pattern.creational.builder
  * 
  *  
  */
-object GatherInformationForReport {
+object GatherInformationForReportBlank {
   def main(args: Array[String]): Unit = {
     
   }
