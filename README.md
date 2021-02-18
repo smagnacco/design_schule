@@ -38,3 +38,14 @@ WIP
 This is a normal sbt project, you can compile code with `sbt compile` and run it
 with `sbt run`, `sbt console` will start a Dotty REPL.
 
+### Environment setup (prerequisite)
+1. Install coursier [Install Coursier](https://get-coursier.io/docs/cli-installation)
+2. [Setup coursier](https://get-coursier.io/docs/cli-setup) ``` cs setup ```
+3. Close and reopen terminal
+4. Go to project and run sbt compile, it should start downloading dependencies
+5. Intellij configuration
+5.1 Download Intellij Community Edition
+5.2 Settings -> Plugins -> Scala
+5.3 Restart Intellij
+5.4 File -> New Project from existing Source, and select project
+
