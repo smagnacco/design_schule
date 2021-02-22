@@ -37,6 +37,4 @@ public final class TheOneRingToRuleThemAll {
     public static void println(String text) {
             System.out.println(text);
     }
-    
-    //TODO: METERLO A CORRER EN UN THREADPOOL EXECUTOR QUE SE EJECUTEN LOS 3 DE MANERA CONCURRENTE, A VER QUIEN SETEA EL OWNER
 }
