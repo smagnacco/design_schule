@@ -2,7 +2,12 @@ package pattern.creational.factory
 
 import java.math.{MathContext, RoundingMode}
 
-
+/**
+ * This is an excercise for Factory pattern
+ * 
+ * Todo: In GatherInformationForReport you cannot select rounding style, now we need to use a Factory in order to
+ * decide a rounding style. 
+ */
 object RoundingStyleFactory {
   def create(style: String): RoundingMode = ???
 }
@@ -25,5 +30,3 @@ object CreateARoundingStyleResolution {
   
   def test(number: BigDecimal, rm: RoundingMode) = println(number.round(MathContext(2, rm)).toDouble)
 }
-
-//TODO: VER COMO COMBINARLO CON GatherInformationForReport para poder elegir que estilo de rounding usar

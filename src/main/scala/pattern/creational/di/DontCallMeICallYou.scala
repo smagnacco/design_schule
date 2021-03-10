@@ -15,6 +15,11 @@ import scala.util.{Failure, Success, Try}
  * 4. Up Front Big Design School (sobrediseño en español), use a heavy or lightweight Framework, 
  * because write xml or yamls is so nice... WTF! 
  * 
+ * Todo:
+ * The excercise propose a first approach using parameter call as a way of inject dependecies
+ * So first try to refactor in order to move params to constructor
+ * try to change result of the mock (inject a result)
+ *  
  */
 object DontCallMeICallYou {
   /**
@@ -36,10 +41,7 @@ object DontCallMeICallYou {
   }
 }
 
-//Excercise refactor this in order to inject dependecies
-// first option move params to constructor and instantiate in there, thinnk in the problem
-// pass through constructor, my school
-// try to change result of the mock (inject a result)
+
 
 class ProcessPriceWithLongParameterSmell {
 
@@ -49,6 +51,8 @@ class ProcessPriceWithLongParameterSmell {
               taxSnapshotService: TaxSnapshotService,
               storePriceService: StorePriceService): Try[Boolean] = {
     
+   
+   
     if ( ! priceService.isValid(price) ) 
       Failure(PriceInvalidException())
     else {

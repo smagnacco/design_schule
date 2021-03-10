@@ -10,8 +10,12 @@ import scala.math.BigDecimal.RoundingMode.RoundingMode
  * La idea es poder juntar información en distintas etapas de la transformación de un request que ingresa al sistema
  * para finalmente generar un reporte.
  *
- * Note: I take shortcuts in order to focus on the problem
- * Nota: Me tomo algunas licencias para enfocarme en el problema
+ * Todo: Try to build a report like
+ * XXXX REPORT XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ * TOTAL PRICE: $PRICE
+ * APPLIED DISCOUNT: $DISCOUNT, PRICE AFTER DISCOUNT: $PRICE_AFTER_DISCOUNT
+ * ADDED TAXES: $TAXES, PRICE AFTER TAX: $TAXES
+ * AFTER APPLYING ROUNDINGS $ROUNDING_TYPE: $PRICE_AFTER_ROUNDINGS  
  *
  */
 object GatherInformationForReportResolution {
